@@ -5,37 +5,48 @@ body {
     padding: 0;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center;
+    flex-direction: row; /* Align content side by side */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start;
     min-height: 100vh;
 }
 
-.container {
-    width: 80%;
+.sidebar {
+    width: 250px; /* Adjust the width as needed */
+    background-color: #333;
+    overflow-y: auto; /* Add a scrollbar for games */
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Adjust the font size for game links */
+    display: block; /* Display game links as block elements for better spacing */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.game-content {
+    margin: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    text-align: center;
 }
 
-h1 {
-    font-size: 3em; /* Larger font size at the top */
-}
-
-p {
-    font-size: 1.2em;
-}
-
-.button {
-    background-color: rgb(255, 250, 94);
-    color: rgb(38, 38, 38);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: rgb(0, 102, 204);
+.rest-of-site {
+    /* Style for the rest of the site content */
 }
