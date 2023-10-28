@@ -1,41 +1,40 @@
 body {
     background-color: rgb(38, 38, 38);
-    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: white; /* Set the default text color for the entire page */
-}
-
-.white-text {
-    color: rgb(255, 250, 94); /* Customize the color for elements with the "white-text" class */
+    color: white;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh; /* Ensure the page fills the viewport */
 }
 
 .container {
-    width: 80%; /* Set the width of a container element */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add some padding inside the container */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    border-radius: 10px; /* Add rounded corners to the container */
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center; /* Center text within the container */
 }
 
 h1 {
-    font-size: 2em; /* Increase the font size of <h1> elements */
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.2em; /* Customize the font size for <p> elements */
+    font-size: 1.2em;
 }
 
 .button {
-    background-color: rgb(255, 250, 94); /* Set the background color for buttons */
-    color: rgb(38, 38, 38); /* Set the text color for buttons */
-    padding: 10px 20px; /* Add padding to buttons */
-    border: none; /* Remove button borders */
-    border-radius: 5px; /* Add rounded corners to buttons */
-    cursor: pointer; /* Add a cursor pointer for interactivity */
+    background-color: rgb(255, 250, 94);
+    color: rgb(38, 38, 38);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Define a hover effect for buttons */
 .button:hover {
     background-color: rgb(0, 102, 204);
 }
