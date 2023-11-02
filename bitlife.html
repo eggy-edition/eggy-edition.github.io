@@ -1,5 +1,42 @@
-<html><head>      <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">  <title>Bitlife</title>
-</head><body>
-<iframe id="iframehtml5" class="d-block" width=100% height=100% src="https://ubg365.github.io/bitlife-life-simulator/play.html" frameborder="0" border="0" scrolling="no" allowfullscreen=""></iframe>
-</body></html>
+<html><head><link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">  <title>Bitlife</title><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml" frameborder="0" allowfullscreen=""></iframe></div><button class="c-button" type="button" onclick="PlayTo(this)" style="display: none;">Play on Classroom 6X</button>
+<style>
+.c-button {
+  min-width: 100%;
+  font-family: fantasy;
+  appearance: auto;
+  border: 0;
+  border-color: #fff;
+  border-radius: 5px;
+  background: #274e13;
+  color: #fff;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.c-button:hover {
+  background: #6aa84f;
+}
+
+.c-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+  
+ .c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+</style>
+
+<script>
+function PlayTo(sel){
+  var div = sel.previousSibling;
+  div.innerHTML=div.getAttribute('data');
+  sel.style.display = "none";
+}
+</script></body></html>
