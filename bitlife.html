@@ -1,41 +1,13 @@
-<html><head><link rel="icon" type="image/png" href="favicon.png">    <link rel="stylesheet" type="text/css" href="styles-no-sidebar.css">  <title>Bitlife</title><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@37c682c65a5a4c1ddc5b5ff2b840924526f209b4/scripts/blf.xml" frameborder="0" allowfullscreen=""></iframe></div><button class="c-button" type="button" onclick="PlayTo(this)" style="display: none;">Play on Classroom 6X</button>
-<style>
-.c-button {
-  min-width: 100%;
-  font-family: fantasy;
-  appearance: auto;
-  border: 0;
-  border-color: #fff;
-  border-radius: 5px;
-  background: #274e13;
-  color: #fff;
+<html><head><link rel="stylesheet" type="text/css" href="styles-no-sidebar.css">
+    <link rel="icon" type="image/png" href="favicon.png">  <title>Bitlife</title>
+  <style>body,html,iframe{margin:0;padding:0;height:100%;width:100%;overflow:hidden}.forceIosScrolling{overflow:scroll;-webkit-overflow-scrolling:touch}</style>
+<script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.coKrc9A11Ng.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_J8xjByIzBlcB6zLaAkxsUwdPdIw/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://apis.google.com/js/api.js?checkCookie=1" gapi_processed="true"></script></head>
 
-  font-size: 30px;
-  cursor: pointer;
-}
+<body>
+<iframe id="innerFrame" name="innerFrame" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation" frameborder="0" allowfullscreen="" src="https://bit2.application08.repl.co" style="overflow: auto;">
+</iframe>
 
-.c-button:hover {
-  background: #6aa84f;
-}
+<script>function loadGapi(){var loaderScript=document.createElement('script');loaderScript.setAttribute('src','https://apis.google.com/js/api.js?checkCookie=1');loaderScript.onload=function(){this.onload=function(){};loadGapiClient();};loaderScript.onreadystatechange=function(){if(this.readyState==='complete'){this.onload();}};(document.head||document.body||document.documentElement).appendChild(loaderScript);}function updateInnerFrame(url,enableInteraction,forceIosScrolling){var urlEl=document.createElement('a');urlEl.setAttribute('href',url);if(urlEl.protocol!="https:"&&urlEl.protocol!="http:"){return;}var iframe=document.getElementById('innerFrame');iframe.src=url;iframe.onload=function(){gapi.rpc.call('..','innerFrameLoaded');};if(enableInteraction){if(forceIosScrolling){var iframeParent=iframe.parentElement;iframeParent.classList.add('forceIosScrolling');}else{iframe.style.overflow='auto';}}else{iframe.style.pointerEvents='none';}}function updateInnerIframeCode(userCode,enableInteraction,forceIosScrolling){gapi.rpc.setup('innerFrame');gapi.rpc.call('innerFrame','updateUserHtmlFrame',undefined,userCode,enableInteraction,forceIosScrolling);}function onPostMessage(ev){if(ev.data['magic']!='SHIC'){return;}var type=ev.data['type'];switch(type){case'resize':var height=ev.data['height'];gapi.rpc.call('..','resize',undefined,height);}}function onGapiInitialized(){gapi.rpc.call('..','gapiInitialized');gapi.rpc.register('updateInnerFrame',updateInnerFrame);gapi.rpc.register('updateInnerIframeCode',updateInnerIframeCode);window.addEventListener('message',onPostMessage);}function loadGapiClient(){gapi.load('gapi.rpc',onGapiInitialized);}if(document.readyState=='complete'){loadGapi();}else{self.addEventListener('load',loadGapi);}</script>
 
-.c-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
-}
-  
- .c-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
-</style>
-
-<script>
-function PlayTo(sel){
-  var div = sel.previousSibling;
-  div.innerHTML=div.getAttribute('data');
-  sel.style.display = "none";
-}
-</script></body></html>
+</body></html>
